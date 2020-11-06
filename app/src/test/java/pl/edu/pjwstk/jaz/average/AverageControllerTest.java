@@ -31,7 +31,7 @@ public class AverageControllerTest {
                 .get("/api/average")
                 .then()
                 .statusCode(200)
-                .body(equalTo("srednia: 1.33"));
+                .body(equalTo("srednia: 1,33"));
     }
 
     @Test
@@ -42,7 +42,7 @@ public class AverageControllerTest {
                 .get("/api/average")
                 .then()
                 .statusCode(200)
-                .body(equalTo("brak parametrow"));
+                .body(equalTo("Podaj parametry"));
 
 
     }
