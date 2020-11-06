@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">4</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.006s</div>
+<div class="counter">1.677s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,23 +78,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">should_calculate_simple_average</td>
-<td class="success">0.038s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">should_calculate_simple_average_integer</td>
-<td class="success">1.892s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">should_correctly_calculate_rounding_numbers</td>
-<td class="success">0.034s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">should_show_no_arguments</td>
-<td class="success">0.042s</td>
+<td class="success">shouldCalculateAverageInt</td>
+<td class="success">1.677s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -102,29 +87,29 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>11:54:10.275 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class pl.edu.pjwstk.jaz.average.AverageControllerIT]
-11:54:10.291 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-11:54:10.310 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-11:54:10.394 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-11:54:10.428 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT], using SpringBootContextLoader
-11:54:10.437 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT]: class path resource [pl/edu/pjwstk/jaz/average/AverageControllerIT-context.xml] does not exist
-11:54:10.438 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT]: class path resource [pl/edu/pjwstk/jaz/average/AverageControllerITContext.groovy] does not exist
-11:54:10.439 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT]: no resource found for suffixes {-context.xml, Context.groovy}.
-11:54:10.440 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT]: AverageControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-11:54:10.751 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\Przemek\IdeaProjects\java-jaz\app\build\classes\java\main\pl\edu\pjwstk\jaz\App.class]
-11:54:10.763 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration pl.edu.pjwstk.jaz.App for test class pl.edu.pjwstk.jaz.average.AverageControllerIT
-11:54:10.967 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Merging default listeners with listeners configured via @TestExecutionListeners for class [pl.edu.pjwstk.jaz.average.AverageControllerIT].
-11:54:10.967 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-11:54:11.002 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@13324e31, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@762bc571, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@463fd61c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@72a1ea87, org.springframework.test.context.support.DirtiesContextTestExecutionListener@73637124, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5bcb3274, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@637c9027, org.springframework.test.context.event.EventPublishingTestExecutionListener@1e74ab1d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@76f613a6, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@742cd79e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@73d69c94, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4841edb0, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@eecac3d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1cee0a59, pl.edu.pjwstk.jaz.RestAssurePortListener@5b9b076c, pl.edu.pjwstk.jaz.TestContextHolder@1cf04dc2]
-11:54:11.007 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT]
-11:54:11.009 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pl.edu.pjwstk.jaz.average.AverageControllerIT]
-11:54:11.014 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT]
-11:54:11.015 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pl.edu.pjwstk.jaz.average.AverageControllerIT]
-11:54:11.016 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT]
-11:54:11.016 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pl.edu.pjwstk.jaz.average.AverageControllerIT]
-11:54:11.025 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@757c2748 testClass = AverageControllerIT, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@28199a80 testClass = AverageControllerIT, locations = '{}', classes = '{class pl.edu.pjwstk.jaz.App}', contextInitializerClasses = '[]', activeProfiles = '{test, noSecurity}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6341c65b, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2d28c0bd, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2427a1dc, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@a0622f8, org.springframework.boot.test.context.SpringBootTestArgs@1], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
-11:54:11.061 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Activating profiles [test, noSecurity]
-11:54:11.070 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
+<pre>12:37:18.478 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class pl.edu.pjwstk.jaz.average.AverageControllerIT]
+12:37:18.490 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+12:37:18.503 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+12:37:18.567 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+12:37:18.592 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT], using SpringBootContextLoader
+12:37:18.599 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT]: class path resource [pl/edu/pjwstk/jaz/average/AverageControllerIT-context.xml] does not exist
+12:37:18.601 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT]: class path resource [pl/edu/pjwstk/jaz/average/AverageControllerITContext.groovy] does not exist
+12:37:18.601 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:37:18.603 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT]: AverageControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:37:18.844 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\Przemek\IdeaProjects\java-jaz\app\build\classes\java\main\pl\edu\pjwstk\jaz\App.class]
+12:37:18.856 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration pl.edu.pjwstk.jaz.App for test class pl.edu.pjwstk.jaz.average.AverageControllerIT
+12:37:19.035 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Merging default listeners with listeners configured via @TestExecutionListeners for class [pl.edu.pjwstk.jaz.average.AverageControllerIT].
+12:37:19.035 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+12:37:19.065 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2086b70c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2b6bf046, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@75357871, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@690bb9a6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7ca04d5c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@83d6b4e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@56956cc8, org.springframework.test.context.event.EventPublishingTestExecutionListener@62e72935, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1c535298, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7fd73d47, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2d9ed59, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@59acd2b6, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5f6d8c89, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1996bf26, pl.edu.pjwstk.jaz.RestAssurePortListener@54683a68, pl.edu.pjwstk.jaz.TestContextHolder@6b6e7b31]
+12:37:19.073 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT]
+12:37:19.075 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pl.edu.pjwstk.jaz.average.AverageControllerIT]
+12:37:19.082 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT]
+12:37:19.083 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pl.edu.pjwstk.jaz.average.AverageControllerIT]
+12:37:19.084 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [pl.edu.pjwstk.jaz.average.AverageControllerIT]
+12:37:19.084 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [pl.edu.pjwstk.jaz.average.AverageControllerIT]
+12:37:19.092 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@6ca15e3a testClass = AverageControllerIT, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@557098c4 testClass = AverageControllerIT, locations = '{}', classes = '{class pl.edu.pjwstk.jaz.App}', contextInitializerClasses = '[]', activeProfiles = '{test, noSecurity}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@6fb191dd, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7b9ab439, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@15ec8ed1, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@48589532, org.springframework.boot.test.context.SpringBootTestArgs@1], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; false]], class annotated with @DirtiesContext [false] with mode [null].
+12:37:19.128 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Activating profiles [test, noSecurity]
+12:37:19.136 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=0}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -134,73 +119,73 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.3.3.RELEASE)
 
-2020-11-06 11:54:11.794  INFO 17444 --- [    Test worker] p.e.p.jaz.average.AverageControllerIT    : Starting AverageControllerIT on DESKTOP-7T328TF with PID 17444 (started by Przemek in C:\Users\Przemek\IdeaProjects\java-jaz\app)
-2020-11-06 11:54:11.795  INFO 17444 --- [    Test worker] p.e.p.jaz.average.AverageControllerIT    : The following profiles are active: test,noSecurity
-2020-11-06 11:54:13.178  INFO 17444 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-11-06 11:54:13.221  INFO 17444 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26ms. Found 0 JPA repository interfaces.
-2020-11-06 11:54:14.364  INFO 17444 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2020-11-06 11:54:14.389  INFO 17444 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-11-06 11:54:14.389  INFO 17444 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
-2020-11-06 11:54:14.636  INFO 17444 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
-2020-11-06 11:54:14.636  INFO 17444 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2462 ms
-2020-11-06 11:54:15.012  INFO 17444 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-11-06 11:54:31.313  INFO 17444 --- [    Test worker] .t.d.DockerMachineClientProviderStrategy : Found docker-machine, and will use machine named default
-2020-11-06 11:54:31.892  INFO 17444 --- [    Test worker] .t.d.DockerMachineClientProviderStrategy : Docker daemon IP address for docker machine default is 192.168.99.101
-2020-11-06 11:54:32.447  INFO 17444 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with docker-machine
-2020-11-06 11:54:32.703  INFO 17444 --- [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is 192.168.99.101
-2020-11-06 11:54:32.742  INFO 17444 --- [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+2020-11-06 12:37:19.826  INFO 12804 --- [    Test worker] p.e.p.jaz.average.AverageControllerIT    : Starting AverageControllerIT on DESKTOP-7T328TF with PID 12804 (started by Przemek in C:\Users\Przemek\IdeaProjects\java-jaz\app)
+2020-11-06 12:37:19.828  INFO 12804 --- [    Test worker] p.e.p.jaz.average.AverageControllerIT    : The following profiles are active: test,noSecurity
+2020-11-06 12:37:21.137  INFO 12804 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-06 12:37:21.176  INFO 12804 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 JPA repository interfaces.
+2020-11-06 12:37:22.324  INFO 12804 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-11-06 12:37:22.353  INFO 12804 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-06 12:37:22.354  INFO 12804 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-11-06 12:37:22.587  INFO 12804 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2020-11-06 12:37:22.588  INFO 12804 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2419 ms
+2020-11-06 12:37:23.013  INFO 12804 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-06 12:37:39.094  INFO 12804 --- [    Test worker] .t.d.DockerMachineClientProviderStrategy : Found docker-machine, and will use machine named default
+2020-11-06 12:37:39.628  INFO 12804 --- [    Test worker] .t.d.DockerMachineClientProviderStrategy : Docker daemon IP address for docker machine default is 192.168.99.101
+2020-11-06 12:37:40.164  INFO 12804 --- [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with docker-machine
+2020-11-06 12:37:40.410  INFO 12804 --- [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is 192.168.99.101
+2020-11-06 12:37:40.444  INFO 12804 --- [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
   Server Version: 19.03.12
   API Version: 1.40
   Operating System: Boot2Docker 19.03.12 (TCL 10.1)
   Total Memory: 985 MB
-2020-11-06 11:54:32.783  WARN 17444 --- [    Test worker] o.t.utility.RegistryAuthLocator          : Failure when attempting to lookup auth config (dockerImageName: testcontainersofficial/ryuk:0.3.0, configFile: C:\Users\Przemek\.docker\config.json. Falling back to docker-java default behaviour. Exception message: C:\Users\Przemek\.docker\config.json (Nie można odnaleźć określonego pliku)
-2020-11-06 11:54:33.377  INFO 17444 --- [    Test worker] org.testcontainers.DockerClientFactory   : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
-2020-11-06 11:54:33.377  INFO 17444 --- [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
-2020-11-06 11:54:33.378  INFO 17444 --- [    Test worker] org.testcontainers.DockerClientFactory   : ?? Docker server version should be at least 1.6.0
-2020-11-06 11:54:33.479  INFO 17444 --- [    Test worker] org.testcontainers.DockerClientFactory   : ?? Docker environment should have more than 2GB free disk space
-2020-11-06 11:54:33.550  INFO 17444 --- [    Test worker] docker[postgres:13]                      : Creating container for image: postgres:13
-2020-11-06 11:54:33.585  INFO 17444 --- [    Test worker] docker[postgres:13]                      : Starting container with ID: 9d3c4fb0918693e571349f12efefe0d7663199965c4e142d173962a15012292d
-2020-11-06 11:54:33.790  INFO 17444 --- [    Test worker] docker[postgres:13]                      : Container postgres:13 is starting: 9d3c4fb0918693e571349f12efefe0d7663199965c4e142d173962a15012292d
-2020-11-06 11:54:35.154  INFO 17444 --- [    Test worker] docker[postgres:13]                      : Container postgres:13 started in PT19.9766205S
-2020-11-06 11:54:35.331  INFO 17444 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-11-06 11:54:36.886  INFO 17444 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
-2020-11-06 11:54:36.911  INFO 17444 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE public.databasechangeloglock (ID INTEGER NOT NULL, LOCKED BOOLEAN NOT NULL, LOCKGRANTED TIMESTAMP WITHOUT TIME ZONE, LOCKEDBY VARCHAR(255), CONSTRAINT DATABASECHANGELOGLOCK_PKEY PRIMARY KEY (ID))
-2020-11-06 11:54:36.917  INFO 17444 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
-2020-11-06 11:54:36.921  INFO 17444 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : DELETE FROM public.databasechangeloglock
-2020-11-06 11:54:36.922  INFO 17444 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangeloglock (ID, LOCKED) VALUES (1, FALSE)
-2020-11-06 11:54:36.927  INFO 17444 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
-2020-11-06 11:54:36.937  INFO 17444 --- [    Test worker] l.lockservice.StandardLockService        : Successfully acquired change log lock
-2020-11-06 11:54:38.582  INFO 17444 --- [    Test worker] l.c.StandardChangeLogHistoryService      : Creating database history table with name: public.databasechangelog
-2020-11-06 11:54:38.584  INFO 17444 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE public.databasechangelog (ID VARCHAR(255) NOT NULL, AUTHOR VARCHAR(255) NOT NULL, FILENAME VARCHAR(255) NOT NULL, DATEEXECUTED TIMESTAMP WITHOUT TIME ZONE NOT NULL, ORDEREXECUTED INTEGER NOT NULL, EXECTYPE VARCHAR(10) NOT NULL, MD5SUM VARCHAR(35), DESCRIPTION VARCHAR(255), COMMENTS VARCHAR(255), TAG VARCHAR(255), LIQUIBASE VARCHAR(20), CONTEXTS VARCHAR(255), LABELS VARCHAR(255), DEPLOYMENT_ID VARCHAR(10))
-2020-11-06 11:54:38.590  INFO 17444 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangelog
-2020-11-06 11:54:38.591  INFO 17444 --- [    Test worker] l.c.StandardChangeLogHistoryService      : Reading from public.databasechangelog
-2020-11-06 11:54:38.593  INFO 17444 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
-2020-11-06 11:54:38.601  INFO 17444 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
-2020-11-06 11:54:38.619  INFO 17444 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : CREATE SEQUENCE hibernate_sequence;
+2020-11-06 12:37:40.474  WARN 12804 --- [    Test worker] o.t.utility.RegistryAuthLocator          : Failure when attempting to lookup auth config (dockerImageName: testcontainersofficial/ryuk:0.3.0, configFile: C:\Users\Przemek\.docker\config.json. Falling back to docker-java default behaviour. Exception message: C:\Users\Przemek\.docker\config.json (Nie można odnaleźć określonego pliku)
+2020-11-06 12:37:41.032  INFO 12804 --- [    Test worker] org.testcontainers.DockerClientFactory   : Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+2020-11-06 12:37:41.032  INFO 12804 --- [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2020-11-06 12:37:41.034  INFO 12804 --- [    Test worker] org.testcontainers.DockerClientFactory   : ?? Docker server version should be at least 1.6.0
+2020-11-06 12:37:41.136  INFO 12804 --- [    Test worker] org.testcontainers.DockerClientFactory   : ?? Docker environment should have more than 2GB free disk space
+2020-11-06 12:37:41.197  INFO 12804 --- [    Test worker] docker[postgres:13]                      : Creating container for image: postgres:13
+2020-11-06 12:37:41.232  INFO 12804 --- [    Test worker] docker[postgres:13]                      : Starting container with ID: 80a0b2d49c1ae3cb5583c8769f6c8c724e60c8ec27d0aee2573c1105d859d9b3
+2020-11-06 12:37:41.433  INFO 12804 --- [    Test worker] docker[postgres:13]                      : Container postgres:13 is starting: 80a0b2d49c1ae3cb5583c8769f6c8c724e60c8ec27d0aee2573c1105d859d9b3
+2020-11-06 12:37:42.913  INFO 12804 --- [    Test worker] docker[postgres:13]                      : Container postgres:13 started in PT19.7935495S
+2020-11-06 12:37:43.076  INFO 12804 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-06 12:37:44.507  INFO 12804 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
+2020-11-06 12:37:44.534  INFO 12804 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE public.databasechangeloglock (ID INTEGER NOT NULL, LOCKED BOOLEAN NOT NULL, LOCKGRANTED TIMESTAMP WITHOUT TIME ZONE, LOCKEDBY VARCHAR(255), CONSTRAINT DATABASECHANGELOGLOCK_PKEY PRIMARY KEY (ID))
+2020-11-06 12:37:44.540  INFO 12804 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
+2020-11-06 12:37:44.545  INFO 12804 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : DELETE FROM public.databasechangeloglock
+2020-11-06 12:37:44.546  INFO 12804 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangeloglock (ID, LOCKED) VALUES (1, FALSE)
+2020-11-06 12:37:44.551  INFO 12804 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2020-11-06 12:37:44.562  INFO 12804 --- [    Test worker] l.lockservice.StandardLockService        : Successfully acquired change log lock
+2020-11-06 12:37:46.052  INFO 12804 --- [    Test worker] l.c.StandardChangeLogHistoryService      : Creating database history table with name: public.databasechangelog
+2020-11-06 12:37:46.054  INFO 12804 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : CREATE TABLE public.databasechangelog (ID VARCHAR(255) NOT NULL, AUTHOR VARCHAR(255) NOT NULL, FILENAME VARCHAR(255) NOT NULL, DATEEXECUTED TIMESTAMP WITHOUT TIME ZONE NOT NULL, ORDEREXECUTED INTEGER NOT NULL, EXECTYPE VARCHAR(10) NOT NULL, MD5SUM VARCHAR(35), DESCRIPTION VARCHAR(255), COMMENTS VARCHAR(255), TAG VARCHAR(255), LIQUIBASE VARCHAR(20), CONTEXTS VARCHAR(255), LABELS VARCHAR(255), DEPLOYMENT_ID VARCHAR(10))
+2020-11-06 12:37:46.060  INFO 12804 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangelog
+2020-11-06 12:37:46.062  INFO 12804 --- [    Test worker] l.c.StandardChangeLogHistoryService      : Reading from public.databasechangelog
+2020-11-06 12:37:46.063  INFO 12804 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2020-11-06 12:37:46.067  INFO 12804 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT COUNT(*) FROM public.databasechangeloglock
+2020-11-06 12:37:46.081  INFO 12804 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : CREATE SEQUENCE hibernate_sequence;
 CREATE TABLE test1(
     id BIGSERIAL NOT NULL PRIMARY KEY,
     name VARCHAR NOT NULL
 )
-2020-11-06 11:54:38.633  INFO 17444 --- [    Test worker] liquibase.changelog.ChangeSet            : SQL in file db.changelog/20201012_init.sql executed
-2020-11-06 11:54:38.634  INFO 17444 --- [    Test worker] liquibase.changelog.ChangeSet            : ChangeSet classpath:db.changelog.yaml::20201012_init.sql::Paweł Janowiak ran successfully in 19ms
-2020-11-06 11:54:38.635  INFO 17444 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT MAX(ORDEREXECUTED) FROM public.databasechangelog
-2020-11-06 11:54:38.638  INFO 17444 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('20201012_init.sql', 'Paweł Janowiak', 'classpath:db.changelog.yaml', NOW(), 1, '8:40f32ff87eb0096fbfd79f789bd2ce03', 'sqlFile', '', 'EXECUTED', NULL, NULL, '3.8.9', '4660078603')
-2020-11-06 11:54:38.647  INFO 17444 --- [    Test worker] l.lockservice.StandardLockService        : Successfully released change log lock
-2020-11-06 11:54:38.879  INFO 17444 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-06 11:54:39.023  INFO 17444 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-11-06 11:54:39.162  INFO 17444 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
-2020-11-06 11:54:39.220  WARN 17444 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-11-06 11:54:39.573  INFO 17444 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-11-06 11:54:39.946  INFO 17444 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2020-11-06 11:54:40.719  INFO 17444 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 49612 (http) with context path '/api'
-2020-11-06 11:54:40.721  INFO 17444 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-11-06 11:54:40.722  INFO 17444 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-11-06 11:54:40.740  INFO 17444 --- [    Test worker] p.e.p.jaz.average.AverageControllerIT    : Started AverageControllerIT in 29.666 seconds (JVM running for 31.936)
-2020-11-06 11:54:41.467  INFO 17444 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-11-06 11:54:41.488  INFO 17444 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-11-06 11:54:42.467  INFO 17444 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-06 11:54:42.468  INFO 17444 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-11-06 11:54:42.505  INFO 17444 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 37 ms
+2020-11-06 12:37:46.090  INFO 12804 --- [    Test worker] liquibase.changelog.ChangeSet            : SQL in file db.changelog/20201012_init.sql executed
+2020-11-06 12:37:46.091  INFO 12804 --- [    Test worker] liquibase.changelog.ChangeSet            : ChangeSet classpath:db.changelog.yaml::20201012_init.sql::Paweł Janowiak ran successfully in 14ms
+2020-11-06 12:37:46.092  INFO 12804 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : SELECT MAX(ORDEREXECUTED) FROM public.databasechangelog
+2020-11-06 12:37:46.096  INFO 12804 --- [    Test worker] liquibase.executor.jvm.JdbcExecutor      : INSERT INTO public.databasechangelog (ID, AUTHOR, FILENAME, DATEEXECUTED, ORDEREXECUTED, MD5SUM, DESCRIPTION, COMMENTS, EXECTYPE, CONTEXTS, LABELS, LIQUIBASE, DEPLOYMENT_ID) VALUES ('20201012_init.sql', 'Paweł Janowiak', 'classpath:db.changelog.yaml', NOW(), 1, '8:40f32ff87eb0096fbfd79f789bd2ce03', 'sqlFile', '', 'EXECUTED', NULL, NULL, '3.8.9', '4662666068')
+2020-11-06 12:37:46.101  INFO 12804 --- [    Test worker] l.lockservice.StandardLockService        : Successfully released change log lock
+2020-11-06 12:37:46.311  INFO 12804 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-06 12:37:46.442  INFO 12804 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-06 12:37:46.559  INFO 12804 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-11-06 12:37:46.619  WARN 12804 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-06 12:37:46.946  INFO 12804 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-06 12:37:47.288  INFO 12804 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2020-11-06 12:37:47.955  INFO 12804 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 49996 (http) with context path '/api'
+2020-11-06 12:37:47.958  INFO 12804 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-06 12:37:47.959  INFO 12804 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-06 12:37:47.972  INFO 12804 --- [    Test worker] p.e.p.jaz.average.AverageControllerIT    : Started AverageControllerIT in 28.832 seconds (JVM running for 30.924)
+2020-11-06 12:37:48.659  INFO 12804 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-06 12:37:48.683  INFO 12804 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-06 12:37:49.549  INFO 12804 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-06 12:37:49.549  INFO 12804 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-06 12:37:49.589  INFO 12804 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 40 ms
 </pre>
 </span>
 </div>
@@ -212,7 +197,7 @@ CREATE TABLE test1(
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.3</a> at 6 lis 2020, 11:54:44</p>
+<a href="http://www.gradle.org">Gradle 6.3</a> at 6 lis 2020, 12:37:51</p>
 </div>
 </div>
 </body>

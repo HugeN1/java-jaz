@@ -12,7 +12,7 @@ public class ReadinessController {
     @Transactional
     @GetMapping("/is-ready")
     public void isReady() {
-        var entity = new Test1Entity();
+        var entity = new TestEntity();
         entity.setName("sdavsda");
         EM.persist(entity);
     }

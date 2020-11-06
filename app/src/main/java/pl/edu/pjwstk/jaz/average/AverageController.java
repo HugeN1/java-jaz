@@ -14,7 +14,7 @@ public class AverageController {
     @GetMapping("average")
     public String getAverage(@RequestParam(value = "numbers", required = false) String numbers){
         if (numbers.isEmpty()){
-            return "Please put parameters";
+            return "Podaj parametry";
         }
         else {
             List<String> partsString = Arrays.asList(numbers.split("\\s*,\\s*"));
@@ -24,10 +24,10 @@ public class AverageController {
             }
             double avg = (double) sumNumbers / partsString.size();
             if (sumNumbers / partsString.size() == avg) {
-                return "Average equals: " + (int) avg;
+                return "srednia: " + (int) avg;
             } else {
                 DecimalFormat twoPlaces = new DecimalFormat("##.00");
-                return "Average equals: " + twoPlaces.format(avg);
+                return "srednia: " + twoPlaces.format(avg);
 
             }
         }
